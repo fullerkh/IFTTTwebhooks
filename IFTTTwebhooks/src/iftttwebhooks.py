@@ -131,23 +131,6 @@ def post(subject,body):
     # if there was a shooting push the data to the open data portal
     # this is about where I'm at with the actual data. Could I try to spoof a browser with a header? how do I send header information? 
     
-    
-#    http_proxy = "http://webgate.rcc.org:8080/"
-#    proxyDict = { 
-#              "http"  : http_proxy, 
-#    }
-#    url = 'https://maker.ifttt.com/trigger/shooting/with/key/Ms0dKrkIhW22BVfL42T1D'
-#    data = urlencode({"value1" : "subject", "value2" : "body", "value3" : "congrats" }).encode()
-#    headers = {'content-type': 'application/json'}
-#    response = urlopen(Request(url, data, headers=headers, proxies=proxyDict))
-#    print(response.info())
-#    print(response.read().decode())
-#    
-#    
-#    # this at least should work??
-#    x = urlopen('https://www.google.com/')
-#    print(x.read())
-
     #create the object, assign it to a variable
     proxy = ProxyHandler({'http': 'webgate.rcc.org:8080'})
     # construct a new opener using your proxy settings
